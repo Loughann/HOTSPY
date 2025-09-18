@@ -316,7 +316,7 @@ export default function ResultsPage() {
             </div>
             <Button
               className="w-full hover:bg-red-700 text-white py-3 text-lg font-bold rounded-lg animate-pulse-custom bg-[rgba(255,0,0,1)]"
-              onClick={() => window.open("https://app.kirvano.com", "_blank")}
+              onClick={() => window.open("https://pay.kirvano.com/e1644a7d-f2b0-4407-b9b5-2728f2fee93f", "_blank")}
             >
               BAIXAR TUDO AGORA MESMO
             </Button>
@@ -381,7 +381,7 @@ export default function ResultsPage() {
 
                 <Button
                   className="w-full hover:bg-red-700 text-white py-3 text-lg font-bold rounded-lg animate-pulse-custom bg-[rgba(255,0,0,1)]"
-                  onClick={() => window.open("https://app.kirvano.com", "_blank")}
+                  onClick={() => window.open("https://pay.kirvano.com/128af1d9-8955-457e-8185-b0c09108918c", "_blank")}
                 >
                   QUERO OS VÍDEOS AGORA
                 </Button>
@@ -451,7 +451,7 @@ export default function ResultsPage() {
 
                 <Button
                   className="w-full hover:bg-red-700 text-white py-3 text-lg font-bold rounded-lg animate-pulse-custom bg-[rgba(255,0,0,1)]"
-                  onClick={() => window.open("https://app.kirvano.com", "_blank")}
+                  onClick={() => window.open("https://pay.kirvano.com/f0680f5a-b5c4-4a60-aff9-5e131e2b1e11", "_blank")}
                 >
                   {"VER FOTOS PELADAS +18"}
                 </Button>
