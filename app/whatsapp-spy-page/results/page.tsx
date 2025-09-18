@@ -195,7 +195,7 @@ export default function ResultsPage() {
                   onClick={handleImageClick}
                 >
                   <Image
-                    src="/images/result-photo.webp"
+                    src="/images/HOT9.jpg"
                     alt="Foto recuperada"
                     width={300}
                     height={200}
@@ -210,7 +210,7 @@ export default function ResultsPage() {
                   onClick={handleImageClick}
                 >
                   <Image
-                    src="/images/result-photo.webp"
+                    src="/images/31071895_008_7312.jpg"
                     alt="Álbum secreto"
                     width={300}
                     height={240}
@@ -411,7 +411,7 @@ export default function ResultsPage() {
                   {[1, 2, 3, 4].map((i) => (
                     <div key={i} className="w-full h-24 bg-gray-800 rounded-lg border border-red-500 overflow-hidden">
                       <Image
-                        src="/images/result-photo.webp"
+                        src="/images/RIht8BZd.jpg"
                         alt={`Foto ${i}`}
                         width={150}
                         height={100}
