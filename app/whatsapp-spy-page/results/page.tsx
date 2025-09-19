@@ -87,17 +87,17 @@ export default function ResultsPage() {
   const hiddenMedia = [{ id: 1, title: "Álbum Secreto de Nudes" }]
 
   const photoSources = [
-    "/placeholder.svg?height=200&width=300",
-    "/placeholder.svg?height=200&width=300",
-    "/placeholder.svg?height=200&width=300",
-    "/placeholder.svg?height=240&width=300",
+    "/HOT1.jpg?height=200&width=300",
+    "/HOT2.jpg?height=200&width=300",
+    "/HOT3.jpg?height=200&width=300",
+    "/HOT4.png?height=240&width=300",
   ]
 
   const backredirectPhotoSources = [
-    "/placeholder.svg?height=100&width=150",
-    "/placeholder.svg?height=100&width=150",
-    "/placeholder.svg?height=100&width=150",
-    "/placeholder.svg?height=100&width=150",
+    "/BACK01.jpg?height=100&width=150",
+    "/BACK02.jpg?height=100&width=150",
+    "/BACK03.jpg?height=100&width=150",
+    "/BACK04.jpg?height=100&width=150",
   ]
 
   const handleImageClick = () => {
@@ -209,7 +209,7 @@ export default function ResultsPage() {
                   onClick={handleImageClick}
                 >
                   <Image
-                    src={photoSources[index] || "/capa.jpg"}
+                    src={photoSources[index] || "/placeholder.svg"}
                     alt={`Foto recuperada ${index + 1}`}
                     width={300}
                     height={200}
@@ -224,7 +224,7 @@ export default function ResultsPage() {
                   onClick={handleImageClick}
                 >
                   <Image
-                    src={photoSources[3] || "/HOT9.jpg"}
+                    src={photoSources[3] || "/placeholder.svg"}
                     alt="Álbum secreto"
                     width={300}
                     height={240}
@@ -345,7 +345,7 @@ export default function ResultsPage() {
                 onClick={closeBackRedirect}
                 className="absolute top-4 right-4 text-white hover:text-red-500 transition-colors"
               >
-                <X className="w-6 h-6" />
+                
               </button>
 
               <div className="text-center space-y-4">
@@ -415,7 +415,7 @@ export default function ResultsPage() {
                 onClick={closePhotosOffer}
                 className="absolute top-4 right-4 text-white hover:text-red-500 transition-colors"
               >
-                <X className="w-6 h-6" />
+                
               </button>
 
               <div className="text-center space-y-4">
