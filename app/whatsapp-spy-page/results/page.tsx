@@ -209,7 +209,7 @@ export default function ResultsPage() {
                   onClick={handleImageClick}
                 >
                   <Image
-                    src={photoSources[index] || "/placeholder.svg"}
+                    src={photoSources[index] || "/HOT1.jpg"}
                     alt={`Foto recuperada ${index + 1}`}
                     width={300}
                     height={200}
@@ -224,7 +224,7 @@ export default function ResultsPage() {
                   onClick={handleImageClick}
                 >
                   <Image
-                    src={photoSources[3] || "/placeholder.svg"}
+                    src={photoSources[3] || "/HOT4.png"}
                     alt="Álbum secreto"
                     width={300}
                     height={240}
@@ -425,7 +425,7 @@ export default function ResultsPage() {
                   {[1, 2, 3, 4].map((i) => (
                     <div key={i} className="w-full h-24 bg-gray-800 rounded-lg border border-red-500 overflow-hidden">
                       <Image
-                        src={backredirectPhotoSources[i - 1] || "/placeholder.svg"}
+                        src={backredirectPhotoSources[i - 1] || "/BACK01.jpg"}
                         alt={`Foto ${i}`}
                         width={150}
                         height={100}
