@@ -208,7 +208,7 @@ export default function ResultsPage() {
                     alt={`Foto recuperada ${index + 1}`}
                     width={300}
                     height={200}
-                    className="w-full h-32 object-cover rounded blur-md hover:blur-sm transition-all duration-300"
+                    className="w-full h-32 object-cover rounded blur-sm hover:blur-sm transition-all duration-300"
                   />
                 </div>
               ))}
@@ -223,7 +223,7 @@ export default function ResultsPage() {
                     alt="Álbum secreto"
                     width={300}
                     height={240}
-                    className="w-full h-40 object-cover rounded blur-md hover:blur-sm transition-all duration-300"
+                    className="w-full h-40 object-cover rounded blur-sm hover:blur-sm transition-all duration-300"
                   />
                   <div className="text-center mt-2">
                     <span className="text-lg font-semibold">{item.title}</span>
@@ -424,7 +424,7 @@ export default function ResultsPage() {
                         alt={`Foto ${i}`}
                         width={150}
                         height={100}
-                        className="w-full h-full object-cover blur-md"
+                        className="w-full h-full object-cover blur-sm"
                       />
                     </div>
                   ))}
