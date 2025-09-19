@@ -86,18 +86,13 @@ export default function ResultsPage() {
 
   const hiddenMedia = [{ id: 1, title: "Álbum Secreto de Nudes" }]
 
-  const photoSources = [
-    "/HOT1.jpg?height=200&width=300",
-    "/HOT2.jpg?height=200&width=300",
-    "/HOT3.jpg?height=200&width=300",
-    "/HOT4.png?height=240&width=300",
-  ]
+  const photoSources = ["/images/azul.png", "/images/branco.png", "/images/vermelho.png", "/images/amarelo.png"]
 
   const backredirectPhotoSources = [
-    "/BACK01.jpg?height=100&width=150",
-    "/BACK02.jpg?height=100&width=150",
-    "/BACK03.jpg?height=100&width=150",
-    "/BACK04.jpg?height=100&width=150",
+    "/images/rosaB.png",
+    "/images/roxoB.png",
+    "/images/verdeB.png",
+    "/images/pretoB.png",
   ]
 
   const handleImageClick = () => {
@@ -209,7 +204,7 @@ export default function ResultsPage() {
                   onClick={handleImageClick}
                 >
                   <Image
-                    src={photoSources[index] || "/HOT1.jpg"}
+                    src={photoSources[index] || "/placeholder.svg"}
                     alt={`Foto recuperada ${index + 1}`}
                     width={300}
                     height={200}
@@ -224,7 +219,7 @@ export default function ResultsPage() {
                   onClick={handleImageClick}
                 >
                   <Image
-                    src={photoSources[3] || "/HOT4.png"}
+                    src={photoSources[3] || "/placeholder.svg"}
                     alt="Álbum secreto"
                     width={300}
                     height={240}
@@ -425,7 +420,7 @@ export default function ResultsPage() {
                   {[1, 2, 3, 4].map((i) => (
                     <div key={i} className="w-full h-24 bg-gray-800 rounded-lg border border-red-500 overflow-hidden">
                       <Image
-                        src={backredirectPhotoSources[i - 1] || "/BACK01.jpg"}
+                        src={backredirectPhotoSources[i - 1] || "/placeholder.svg"}
                         alt={`Foto ${i}`}
                         width={150}
                         height={100}
