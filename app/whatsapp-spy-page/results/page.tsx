@@ -86,6 +86,20 @@ export default function ResultsPage() {
 
   const hiddenMedia = [{ id: 1, title: "Álbum Secreto de Nudes" }]
 
+  const photoSources = [
+    "/placeholder.svg?height=200&width=300",
+    "/placeholder.svg?height=200&width=300",
+    "/placeholder.svg?height=200&width=300",
+    "/placeholder.svg?height=240&width=300",
+  ]
+
+  const backredirectPhotoSources = [
+    "/placeholder.svg?height=100&width=150",
+    "/placeholder.svg?height=100&width=150",
+    "/placeholder.svg?height=100&width=150",
+    "/placeholder.svg?height=100&width=150",
+  ]
+
   const handleImageClick = () => {
     setIsModalOpen(true)
   }
@@ -188,29 +202,29 @@ export default function ResultsPage() {
               Nudes Recuperados (Excluídos)
             </h2>
             <div className="space-y-3">
-              {conversationSnippets.map((item) => (
+              {conversationSnippets.map((item, index) => (
                 <div
                   key={item.id}
                   className="bg-gray-800 rounded-lg p-2 border border-red-500 shadow-[0_0_10px_rgba(220,38,38,0.5)] cursor-pointer"
                   onClick={handleImageClick}
                 >
                   <Image
-                    src="/images/HOT9.jpg"
-                    alt="Foto recuperada"
+                    src={photoSources[index] || "/capa.jpg"}
+                    alt={`Foto recuperada ${index + 1}`}
                     width={300}
                     height={200}
                     className="w-full h-32 object-cover rounded blur-md hover:blur-sm transition-all duration-300"
                   />
                 </div>
               ))}
-              {hiddenMedia.map((item) => (
+              {hiddenMedia.map((item, index) => (
                 <div
                   key={item.id}
                   className="bg-gray-800 rounded-lg p-2 border border-red-500 shadow-[0_0_10px_rgba(220,38,38,0.5)] cursor-pointer"
                   onClick={handleImageClick}
                 >
                   <Image
-                    src="/images/31071895_008_7312.jpg"
+                    src={photoSources[3] || "/HOT9.jpg"}
                     alt="Álbum secreto"
                     width={300}
                     height={240}
@@ -411,7 +425,7 @@ export default function ResultsPage() {
                   {[1, 2, 3, 4].map((i) => (
                     <div key={i} className="w-full h-24 bg-gray-800 rounded-lg border border-red-500 overflow-hidden">
                       <Image
-                        src="/images/RIht8BZd.jpg"
+                        src={backredirectPhotoSources[i - 1] || "/placeholder.svg"}
                         alt={`Foto ${i}`}
                         width={150}
                         height={100}

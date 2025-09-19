@@ -109,8 +109,10 @@ export default function WhatsappSpyPage() {
 
   return (
     <div className="min-h-screen bg-black text-white">
-      <div className="text-white py-3 px-4 text-center md:text-base bg-[rgba(255,0,0,1)] text-base font-bold animate-pulse-scarcity">
-        Você GANHOU 1 consulta 100% gratuita válida até dia {currentDate}
+      <div className="text-white py-3 px-4 text-center md:text-base bg-[rgba(255,0,0,1)] text-base font-bold h-[60px] flex items-center justify-center">
+        <span className="animate-pulse-scarcity">
+          Você GANHOU 1 consulta 100% gratuita válida até dia {currentDate}
+        </span>
       </div>
 
       <div className="flex items-center justify-center p-4 tracking-normal min-h-[calc(100vh-60px)]">
